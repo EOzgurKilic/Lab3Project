@@ -6,15 +6,16 @@ body {
     display: flex;
     gap: 40px;
     justify-content: center;
+    align-items: flex-start;
   }
   
   .main-video {
     flex: 2;
+    max-width: 800px;
   }
   
   .main-video video {
     width: 100%;
-    max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.15);
   }
@@ -24,6 +25,22 @@ body {
     margin-top: 20px;
     color: #222;
     text-align: left;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .download-btn:hover {
+    background-color: #0056b3;
   }
   
   .sidebar {
@@ -43,8 +60,8 @@ body {
   
   .sidebar-item img {
     width: 100%;
-    max-width: 150px;
-    height: 90px;
+    max-width: 180px;
+    height: auto;
     object-fit: cover;
     border-radius: 6px;
   }
