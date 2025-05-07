@@ -3,15 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Watch Video 1</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/video.css">
 </head>
 <body>
-  <h1>Video 1</h1>
-  <video width="720" controls>
-    <source src="videos/video1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <br><br>
-  <a href="videos/video1.mp4" download class="watch-btn">Download Video</a>
+  <div class="main-video">
+    <video controls>
+      <source src="videos/video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-title">Video 1: Party Night</div>
+    <a href="videos/video1.mp4" download class="sidebar-item a">Download Video</a>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-item">
+      <img src="img/tmb2.jpeg" alt="Video 2">
+      <a href="video2.html">2001 Tarkan</a>
+    </div>
+    <div class="sidebar-item">
+      <img src="img/tmb4.jpg" alt="Video 4">
+      <a href="video4.html">Z I P L A</a>
+    </div>
+    <div class="sidebar-item">
+      <img src="img/tmb3.jpg" alt="Video 3">
+      <a href="video3.html">Kızılcıklar Oldu Mu?</a>
+    </div>
+  </div>
 </body>
 </html>
