@@ -1,42 +1,45 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
-    margin: 0;
-    padding: 40px;
+  }
+  
+  .container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
     gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
   }
   
   .main-video {
-    flex: 2;
-    max-width: 800px;
+    flex: 3;
   }
   
   .main-video video {
     width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   }
   
   .video-title {
     font-size: 1.8em;
     margin-top: 20px;
     color: #222;
-    text-align: left;
   }
   
   .download-btn {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 16px;
+    margin-top: 10px;
+    padding: 10px 20px;
     background-color: #007BFF;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.2s;
   }
   
   .download-btn:hover {
@@ -44,7 +47,7 @@ body {
   }
   
   .sidebar {
-    flex: 1;
+    flex: 0 0 220px; /* Fixed width for smaller sidebar */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -56,12 +59,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
+    width: 100%; /* Prevent overflow */
   }
   
   .sidebar-item img {
     width: 100%;
-    max-width: 180px;
-    height: auto;
+    height: 90px;
     object-fit: cover;
     border-radius: 6px;
   }
@@ -69,15 +72,19 @@ body {
   .sidebar-item a {
     display: block;
     margin-top: 8px;
-    padding: 6px 12px;
+    padding: 6px 10px;
     background-color: #007BFF;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: 0.85em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .sidebar-item a:hover {
     background-color: #0056b3;
   }
+  
   
